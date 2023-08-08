@@ -3,15 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS link -->
     <link rel="stylesheet" href="./index.css" />
     <title>BoredBot</title>
   </head>
 
   <body>
-    <h1>🥱 BoredBot 🤖</h1>
-    <h3>What should I do?</h3>
-    <p id="activity">...</p>
-    <button>PLACEHOLDER</button>
+    <main>
+      <div class="container flex">
+        <h1 class="bot-name">🥱 BoredBot 🤖</h1>
+        <div class="bot-activity">
+          <h3>What should I do?</h3>
+          <p id="activity">...</p>
+        </div>
+        <button class="btn"></button>
+      </div>
+    </main>
     <script src="index.js" type="module"></script>
   </body>
 </html>
