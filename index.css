@@ -1,0 +1,98 @@
+/* ---------- CUSTOM PROPERTIES --------------- */
+
+:root {
+    --cl-black: 0, 0%, 5%;
+    --cl-container-bg: 0, 0%, 97%;
+    --cl-btn: 342, 75%, 30%;
+    --cl-btn-hover: 38, 92%, 50%;
+}
+  
+/* RESET */
+/* CSS Reset https://andy-bell.co.uk/a-modern-css-reset/ */
+  
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+  
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+     margin: 0;
+}
+  
+/* Set up body */
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: hsl(var(--cl-black));
+    line-height: 1.5;
+}
+  
+/* Make images easier to work with */
+img {
+    display: block;
+    object-fit: cover;
+}
+
+/* --------------- UTILITY CLASSES ------------------*/
+
+.container {
+    background-color: hsl(var(--cl-container-bg));
+    width: 100%;
+    margin: 10rem auto;
+    max-width: 30rem;
+    min-height: 35rem;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid hsl(var(--cl-black)); */
+    border-radius: .5rem;
+}
+
+.flex {
+     display: flex;
+}
+
+/* ----------------- TYPOGRAPHY ------------------- */
+
+h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+
+p {
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+/* ----------------- BUTTON ------------------- */
+.btn {
+    background-color: hsl(var(--cl-btn));
+    width: 10rem;
+    height: 10rem;
+    border: none;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}  
+
+.btn:hover,
+.btn:focus {
+    background-color: hsl(var(--cl-btn-hover));
+}
+
+/* ---------------- LAYOUT -------------------- */
+
+.bot-name {
+    margin: 2rem 0;
+}
