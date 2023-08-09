@@ -45,9 +45,9 @@ img {
 .container {
     background-color: hsl(var(--cl-container-bg));
     width: 100%;
-    margin: 10rem auto;
+    margin: 10vh auto;
     max-width: 30rem;
-    min-height: 35rem;
+    min-height: 50vh;
     flex-direction: column;
     align-items: center;
     /* border: 2px solid hsl(var(--cl-black)); */
@@ -62,29 +62,56 @@ img {
 
 h1 {
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2rem;
+}
+
+@media (width > 400px) {
+    h1 {
+        font-size: 2.5rem;
+    }
 }
 
 h3 {
     font-weight: 400;
-    font-size: 1.375rem;
+    font-size: 1.125rem;
+}
+
+@media (width > 400px) {
+    h3 {
+        font-size: 1.375rem;
+    }
 }
 
 p {
     font-weight: 600;
-    font-size: 1.75rem;
+    font-size: 1.375rem;
+}
+
+@media (width > 400px) {
+    p {
+        font-size: 1.75rem;
+    }
 }
 
 /* ----------------- BUTTON ------------------- */
 .btn {
     background-color: hsl(var(--cl-btn));
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
+    margin: 3.5rem 0;
     border: none;
     border-radius: 50%;
     transition: 0.3s;
     cursor: pointer;
 }  
+
+@media (width > 400px) {
+    .btn {
+        margin: 5rem 0;
+        width: 10rem;
+        height: 10rem;
+    } 
+}
 
 .btn:hover,
 .btn:focus {
@@ -94,5 +121,29 @@ p {
 /* ---------------- LAYOUT -------------------- */
 
 .bot-name {
-    margin: 2rem 0;
+    margin: 1.5rem 0;
+}
+
+@media (width > 400px) {
+    .bot-name {
+        margin: 2rem 0;
+    }
+}
+
+.bot-activity {
+    text-align: center;
+}
+
+.bot-activity h3 {
+    text-decoration: underline;
+}
+
+.bot-activity p {
+    padding: 1.25rem 0 0;
+}
+
+@media (width > 400px) {
+    .bot-activity p {
+        padding: 1.5rem 0 0;
+    }
 }
